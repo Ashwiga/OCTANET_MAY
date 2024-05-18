@@ -1,72 +1,127 @@
 body {
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* to center vertically */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(253, 222, 227); /* Light background color */
 }
 
-.container {
-    background-color: #f0f0f0; /* background color of the box */
-    padding: 20px;
-    border-radius: 10px; /* border radius for rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* box shadow for depth */
+header {
+  background-color:pink; /* White header background */
+  padding: 20px;
+  text-align: center;
 }
 
 h1 {
-    text-align: center;
+  font-size: 2em;
+  margin-bottom: 5px;
+  color: #58514b; /* Dark primary text color */
 }
 
-#todo-form {
-    display: flex;
-    margin-bottom: 10px;
+p {
+  font-size: 1em;
+  color: #100e0e; /* Secondary text color */
 }
 
-#new-task {
-    flex: 1;
-    padding: 2px;
-    border: 1px solid #ccc;
+nav {
+  display: flex;
+  justify-content: center; /* Center navigation links */
+  margin-top: 20px;
 }
 
-#add-btn {
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
 }
 
-#todo-list {
-    list-style: none;
-    padding: 0;
+nav li {
+  margin-right: 20px;
 }
 
-#todo-list li {
-    margin-bottom: 5px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav a {
+  text-decoration: none;
+  color: #333; /* Inherit primary text color */
+  font-weight: bold; /* Bold navigation links */
 }
 
-#todo-list li input[type="checkbox"] {
-    margin-right: 10px;
+main {
+  padding: 50px;
 }
 
-#todo-list li label {
-    cursor: pointer;
+.banner {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-#todo-list li.completed {
-    text-decoration: line-through;
-    opacity: 0.5;
+.banner img {
+  width: 100%; /* Responsive image */
+  max-width: 600px; /* Set a maximum width */
 }
 
-#todo-list li button {
-    padding: 2px 5px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    cursor: pointer;
+.banner h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+  color: #222121;
+}
+
+.banner a {
+  background-color: #e26767; /* Accent color for button */
+  color: #fff; /* White text for button */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.banner a:hover {
+  background-color: #e56aa1; /* Darker shade on hover */
+}
+
+.flavors {
+  display: flex;
+  justify-content: space-around; /* Distribute flavor cards evenly */
+  flex-wrap: wrap; /* Wrap cards to multiple lines if needed */
+  margin-bottom: 50px;
+}
+
+.flavor-card {
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  background-color: #f39494; /* White background for cards */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.flavor-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Round image for cakes */
+  margin-bottom: 10px;
+}
+
+.flavor-card:hover {
+  transform: scale(1.05); /* Enlarge card slightly on hover */
+}
+
+.custom {
+  margin-bottom: 50px;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonial {
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #ed737386; /* Light border for testimonials */
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ee9a9a;
 }
